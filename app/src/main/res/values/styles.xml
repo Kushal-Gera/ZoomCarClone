@@ -11,16 +11,17 @@
 
     </style>
 
-    <style name="AlertDialogGreen" parent="Theme.AppCompat.Light.Dialog.Alert">
-        <item name="colorAccent">@color/yellow</item>
+    <style name="AlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#1976D2</item>
 
-        <item name="android:textColorPrimary">@color/white</item>
-        <item name="android:textColorSecondary">#CCC</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">#454545</item>
 
-        <item name="dialogCornerRadius">15dp</item>
+        <item name="dialogCornerRadius">12dp</item>
 
-        <item name="android:background">@color/toolbarColor</item>
+        <item name="android:background">@color/backgroundColor</item>
     </style>
+
 
     <style name="TimeDailog" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="colorAccent">@color/toolbarColor</item>

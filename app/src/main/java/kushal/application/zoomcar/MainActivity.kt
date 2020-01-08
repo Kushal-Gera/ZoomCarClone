@@ -87,6 +87,36 @@ class MainActivity : AppCompatActivity() {
 
             onBackPressed()
         }
+        super_club.setOnClickListener {
+            val builder = AlertDialog.Builder(
+                this,
+                R.style.AlertDialog
+            )
+            builder.setTitle("In Working Phase")
+                .setMessage("This feature is related to back-end and services, So it is currently in developing phase.\nHere Membership page would open in final build.")
+                .setPositiveButton("Understood") { dialog: DialogInterface, pos: Int ->
+
+                }
+                .setNegativeButton("dismiss") { dialogInterface: DialogInterface, i: Int ->
+
+                }
+            builder.create().show()
+        }
+        policies.setOnClickListener {
+            val builder = AlertDialog.Builder(
+                this,
+                R.style.AlertDialog
+            )
+            builder.setTitle("In Working Phase")
+                .setMessage("This feature is related to back-end and services, So it is currently in developing phase.\nHere Policies page would open in final build.")
+                .setPositiveButton("Understood") { dialog: DialogInterface, pos: Int ->
+
+                }
+                .setNegativeButton("dismiss") { dialogInterface: DialogInterface, i: Int ->
+
+                }
+            builder.create().show()
+        }
 
         main_photo.setOnClickListener {
             Toast.makeText(this, "Verification Clicked", Toast.LENGTH_SHORT).show()
@@ -97,7 +127,7 @@ class MainActivity : AppCompatActivity() {
         help.setOnClickListener {
             val builder = AlertDialog.Builder(
                 this,
-                R.style.AlertDialogGreen
+                R.style.AlertDialog
             )
             builder.setTitle("Contact Us Here")
                 .setMessage("We are available 24 / 7 at your service.\nPlease choose anyone:")
