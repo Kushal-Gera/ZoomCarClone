@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundColorDark">#242B33</color>
+    <color name="backgroundColor">#E0E0E0</color>
+    <color name="toolbarColor">#323B44</color>
+
+    <color name="colorAccent">#323B44</color>
+
+    <color name="white">#FFF</color>
+    <color name="gray">#bdbdbd</color>
+
+    <color name="yellow">#FFA726</color>
+    <color name="black">#000</color>
+</resources>

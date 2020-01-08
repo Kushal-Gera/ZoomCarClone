@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/backgroundColor</item>
+        <item name="colorPrimaryDark">@color/backgroundColorDark</item>
+        <item name="colorAccent">@color/toolbarColor</item>
+
+        <item name="android:statusBarColor">@color/backgroundColorDark</item>
+
+    </style>
+
+    <style name="AlertDialogGreen" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/yellow</item>
+
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">#CCC</item>
+
+        <item name="dialogCornerRadius">15dp</item>
+
+        <item name="android:background">@color/toolbarColor</item>
+    </style>
+
+    <style name="TimeDailog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/toolbarColor</item>
+
+        <item name="android:textColor">@color/toolbarColor</item>
+        <item name="android:textColorSecondary">#ABABAB</item>
+
+        <item name="dialogCornerRadius">15dp</item>
+    </style>
+
+
+</resources>
