@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-3dp"
                 android:gravity="center"
-                android:text="not verified ?"
+                android:text="verify ?"
                 android:textColor="#BBB"
                 android:textSize="15sp" />
 
@@ -87,14 +87,29 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="20dp"
-                android:drawableStart="@drawable/car"
+                android:drawableStart="@drawable/ic_home_black_24dp"
                 android:drawablePadding="10dp"
                 android:drawableTint="@color/white"
                 android:gravity="center"
-                android:text="My Trip"
+                android:text="Home"
                 android:textColor="#FFF"
                 android:textSize="20sp"
                 android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/trips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="20dp"
+                android:drawableStart="@drawable/car"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/gray"
+                android:text="My Trips"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/admin"
@@ -155,22 +170,6 @@
                 android:drawableTint="@color/gray"
                 android:gravity="center"
                 android:text="Help &amp; Support"
-                android:textColor="@color/gray"
-                android:textSize="20sp"
-                tools:ignore="UnusedAttribute" />
-
-            <TextView
-                android:id="@+id/signOut"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="20dp"
-                android:drawableStart="@drawable/signout"
-                android:drawablePadding="10dp"
-                android:drawableTint="@color/gray"
-                android:gravity="center"
-                android:text="Sign Out"
                 android:textColor="@color/gray"
                 android:textSize="20sp"
                 tools:ignore="UnusedAttribute" />

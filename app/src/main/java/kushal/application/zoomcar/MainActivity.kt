@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
     private val menuItemList by lazy {
         arrayListOf<TextView>(
-            home_tv, admin, super_club, policies, help, signOut
+            home_tv, admin, super_club, policies, help, trips
         )
     }
 
@@ -53,9 +53,6 @@ class MainActivity : AppCompatActivity() {
             //            startActivity(Intent(this, Settings::class.java))
             Toast.makeText(this, "settings Clicked", Toast.LENGTH_SHORT).show()
         }
-        signOut.setOnClickListener{
-            Toast.makeText(this, "Sign Out Clicked", Toast.LENGTH_SHORT).show()
-        }
 
         setAllGray()
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -76,6 +73,14 @@ class MainActivity : AppCompatActivity() {
             colorToWhite(it)
             fManager.beginTransaction().replace(R.id.layout, HomeFrag()).commit()
             ON_HOME = true
+
+            onBackPressed()
+        }
+        trips.setOnClickListener {
+            header_text.text = "My Trips"
+            colorToWhite(it)
+            fManager.beginTransaction().replace(R.id.layout, MyTrips()).commit()
+            ON_HOME = false
 
             onBackPressed()
         }
