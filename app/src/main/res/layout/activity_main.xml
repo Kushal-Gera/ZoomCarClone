@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-3dp"
                 android:gravity="center"
-                android:text="verify ?"
+                android:text="not verified !"
                 android:textColor="#BBB"
                 android:textSize="15sp" />
 
